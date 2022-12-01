@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 Vue.use(Vuex)
 
+// 模块
 const moduleA = {
   state: {
     name: '小八嘎',
@@ -27,6 +28,7 @@ const moduleA = {
   }
 }
 
+// 主结构
 export default new Vuex.Store({
   // state 储存公共数据
   state: {
@@ -174,6 +176,7 @@ export default new Vuex.Store({
 
   // modules 模块 vuex私有化 去臃肿
   modules: {
+    // 导入模块
     moduleA
   }
 })
